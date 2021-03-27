@@ -1,4 +1,4 @@
-package com.example.roaddefect;
+package com.example.roaddefect.recyclerViewHelper;
 
 public class ModelClass {
 

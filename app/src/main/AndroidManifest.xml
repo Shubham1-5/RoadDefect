@@ -9,10 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RoadDefect">
-        <activity android:name=".DefectAddActivity"></activity>
-        <activity android:name=".UserDashboard" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".IntroductoryActivity">
+        <activity android:name=".bottomNavBar.UserDashboard" />
+        <activity android:name=".socialMediaButtonOnLogInSignup.LoginActivity" />
+        <activity android:name=".splashScreen.IntroductoryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

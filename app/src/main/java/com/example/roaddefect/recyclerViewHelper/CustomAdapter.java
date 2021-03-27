@@ -1,4 +1,4 @@
-package com.example.roaddefect;
+package com.example.roaddefect.recyclerViewHelper;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.roaddefect.R;
 
 import java.util.List;
 
@@ -26,8 +28,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        LayoutInflater layoutInflater=LayoutInflater.from(context);
-        View view = layoutInflater.inflate(R.layout.defect_row,parent,false);
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View view = layoutInflater.inflate(R.layout.defect_row, parent, false);
         return new MyViewHolder(view);
     }
 
@@ -49,8 +51,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView=itemView.findViewById(R.id.demoImgView);
-            textView=itemView.findViewById(R.id.demoTextView);
+            imageView = itemView.findViewById(R.id.demoImgView);
+            textView = itemView.findViewById(R.id.demoTextView);
         }
     }
 }

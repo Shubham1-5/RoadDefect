@@ -4,24 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IntroductoryActivity"
-    android:background="@drawable/gradient_backgrnd">
+    android:background="@drawable/gradient_backgrnd"
+    tools:context=".splashScreen.IntroductoryActivity">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
-        app:lottie_autoPlay="true"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:elevation="2dp"
-        app:lottie_rawRes="@raw/roadsplash"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/roadsplash" />
 
     <com.cuberto.liquid_swipe.LiquidPager
+        android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/pager"/>
+        android:layout_height="match_parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

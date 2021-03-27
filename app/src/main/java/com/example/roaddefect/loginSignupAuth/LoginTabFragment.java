@@ -1,4 +1,4 @@
-package com.example.roaddefect;
+package com.example.roaddefect.loginSignupAuth;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,33 +7,34 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.roaddefect.R;
+import com.example.roaddefect.bottomNavBar.UserDashboard;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginTabFragment extends Fragment {
 
-    TextInputLayout email,password;
+    TextInputLayout email, password;
     CheckBox remember;
     Button forgotPass, loginButton;
-    float v=0;
+    float v = 0;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.login_tab_fragment,container,false);
+        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.login_tab_fragment, container, false);
 
-        email=root.findViewById(R.id.email);
-        password=root.findViewById(R.id.password);
-        remember=root.findViewById(R.id.remember);
-        forgotPass=root.findViewById(R.id.forgotPass);
-        loginButton=root.findViewById(R.id.loginButton);
+        email = root.findViewById(R.id.email);
+        password = root.findViewById(R.id.password);
+        remember = root.findViewById(R.id.remember);
+        forgotPass = root.findViewById(R.id.forgotPass);
+        loginButton = root.findViewById(R.id.loginButton);
 
         email.setTranslationX(800);
         password.setTranslationX(800);
@@ -63,7 +64,7 @@ public class LoginTabFragment extends Fragment {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(),UserDashboard.class);
+                Intent intent = new Intent(getActivity(), UserDashboard.class);
                 startActivity(intent);
             }
         });

@@ -1,4 +1,4 @@
-package com.example.roaddefect;
+package com.example.roaddefect.loginSignupAuth;
 
 import android.content.Context;
 
@@ -11,10 +11,10 @@ public class LoginAdapter extends FragmentPagerAdapter {
     private Context context;
     int totalTabs;
 
-    public LoginAdapter(FragmentManager fa, Context context, int totalTabs){
+    public LoginAdapter(FragmentManager fa, Context context, int totalTabs) {
         super(fa);
-        this.context=context;
-        this.totalTabs=totalTabs;
+        this.context = context;
+        this.totalTabs = totalTabs;
     }
 
     @Override
@@ -22,13 +22,13 @@ public class LoginAdapter extends FragmentPagerAdapter {
         return totalTabs;
     }
 
-    public Fragment getItem(int position){
-        switch(position){
+    public Fragment getItem(int position) {
+        switch (position) {
             case 0:
-                LoginTabFragment loginTabFragment=new LoginTabFragment();
+                LoginTabFragment loginTabFragment = new LoginTabFragment();
                 return loginTabFragment;
             case 1:
-                SignupTabFragment signupTabFragment=new SignupTabFragment();
+                SignupTabFragment signupTabFragment = new SignupTabFragment();
                 return signupTabFragment;
             default:
                 return null;

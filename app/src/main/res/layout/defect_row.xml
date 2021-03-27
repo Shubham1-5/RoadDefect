@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="wrap_content">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -11,12 +11,12 @@
         tools:ignore="MissingConstraints">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/demoCrdView"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:id="@+id/demoCrdView"
-            app:cardCornerRadius="80dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="20dp">
+            app:cardCornerRadius="80dp">
 
             <ImageView
                 android:id="@+id/demoImgView"
@@ -32,12 +32,12 @@
             android:id="@+id/demoTextView"
             android:layout_width="180dp"
             android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:layout_toRightOf="@id/demoCrdView"
             android:layout_marginLeft="50dp"
-            android:text="TextView" />
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/demoCrdView"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
 
     </RelativeLayout>
 

@@ -4,14 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="50dp"
-    android:background="@color/teal_200"
-    tools:context=".userCompleteFragment.UserMapFragment">
+    tools:context=".userCompleteFragment.DefectAddFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Maps Fragment" />
+        android:text="@string/hello_blank_fragment" />
 
 </FrameLayout>

@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_backgrnd"
-    android:paddingTop="20dp"
-    android:paddingBottom="25dp"
     android:paddingLeft="30dp"
-    android:paddingRight="30dp">
+    android:paddingTop="20dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="25dp">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -42,8 +42,8 @@
                     android:layout_height="match_parent"
                     android:fontFamily="monospace"
                     android:inputType="textWebEmailAddress"
-                    android:textCursorDrawable="@drawable/black_cursor"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/black_cursor" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -64,8 +64,8 @@
                     android:layout_height="match_parent"
                     android:fontFamily="monospace"
                     android:inputType="textPassword"
-                    android:textCursorDrawable="@drawable/black_cursor"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/black_cursor" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
