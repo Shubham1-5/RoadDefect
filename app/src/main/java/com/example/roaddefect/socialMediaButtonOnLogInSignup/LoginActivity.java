@@ -1,12 +1,12 @@
 package com.example.roaddefect.socialMediaButtonOnLogInSignup;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import android.os.Bundle;
-
-import com.example.roaddefect.loginSignupAuth.LoginAdapter;
 import com.example.roaddefect.R;
+import com.example.roaddefect.loginSignupAuth.LoginAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 

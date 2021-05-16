@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.roaddefect.socialMediaButtonOnLogInSignup.LoginActivity;
 import com.example.roaddefect.R;
+import com.example.roaddefect.socialMediaButtonOnLogInSignup.LoginActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class OnBoardingFragment3 extends Fragment {

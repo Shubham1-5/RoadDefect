@@ -74,6 +74,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter your number"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
                 app:boxStrokeColor="@color/black"
                 app:boxStrokeWidthFocused="2dp"
                 app:endIconTint="@color/black"

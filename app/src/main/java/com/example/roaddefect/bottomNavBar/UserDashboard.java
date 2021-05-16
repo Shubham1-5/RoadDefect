@@ -1,9 +1,9 @@
 package com.example.roaddefect.bottomNavBar;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-
-import android.os.Bundle;
 
 import com.example.roaddefect.R;
 import com.example.roaddefect.userCompleteFragment.DefectAddFragment;
