@@ -29,21 +29,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:enabled="false"
             android:hint="Select Defect"
-            app:endIconMode="dropdown_menu"
+            android:textColorHint="@color/black"
             app:boxCornerRadiusTopEnd="16dp"
             app:boxCornerRadiusTopStart="16dp"
-            android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
             app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="dropdown_menu"
             app:startIconDrawable="@drawable/ic_baseline_warning_24"
             app:startIconTint="@color/black">
 
             <AutoCompleteTextView
                 android:id="@+id/defectAutoComp1"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -53,20 +56,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:enabled="false"
             android:hint="Select Sub-Defect"
-            app:endIconMode="dropdown_menu"
+            android:inputType="none"
             android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
             app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="dropdown_menu"
             app:startIconDrawable="@drawable/ic_baseline_warning_24"
             app:startIconTint="@color/black">
 
             <AutoCompleteTextView
                 android:id="@+id/defectAutoComp2"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                />
+                android:layout_weight="1"
+                android:enabled="false"
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
