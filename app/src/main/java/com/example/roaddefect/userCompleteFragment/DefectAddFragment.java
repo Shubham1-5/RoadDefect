@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -15,7 +18,10 @@ import com.google.android.material.textfield.TextInputLayout;
 
 public class DefectAddFragment extends Fragment {
     private TextInputLayout defectSelection, defectSubSelection;
+    private TextInputLayout defectLength, defectWidth, defectDepth, defectDesc;
+    private RadioGroup severityRadioGrp;
     private AutoCompleteTextView defectAutoComp1, defectAutoComp2;
+    private Button insertRecord;
     String[] parentDefectItem, subDefectItem1, subDefectItem2;
     ArrayAdapter<String> adapter1, adapter2, adapter3;
     View v;
@@ -29,6 +35,13 @@ public class DefectAddFragment extends Fragment {
         defectSubSelection = v.findViewById(R.id.defectSubSelection);
         defectAutoComp1 = v.findViewById(R.id.defectAutoComp1);
         defectAutoComp2 = v.findViewById(R.id.defectAutoComp2);
+        defectLength = v.findViewById(R.id.defectLength);
+        defectWidth = v.findViewById(R.id.defectWidth);
+        defectDepth = v.findViewById(R.id.defectDepth);
+        defectDesc = v.findViewById(R.id.defectDesc);
+        severityRadioGrp = v.findViewById(R.id.severityRadioGrp);
+        insertRecord = v.findViewById(R.id.insertRecord);
+
         parentDefectItem = new String[]{"Crack", "Pothole"};
         subDefectItem1 = new String[]{"Item1", "Item2", "Item3"};
         subDefectItem2 = new String[]{"Item4", "Item5", "Item6"};
@@ -71,6 +84,19 @@ public class DefectAddFragment extends Fragment {
                     defectAutoComp2.setThreshold(0);
                     defectAutoComp2.setAdapter(adapter3);
                 }
+            }
+        });
+
+        insertRecord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Defect Successfully recorded!", Toast.LENGTH_LONG).show();
+                defectAutoComp1.getText().clear();
+                defectAutoComp2.getText().clear();
+                defectLength.getEditText().getText().clear();
+                defectDepth.getEditText().getText().clear();
+                defectWidth.getEditText().getText().clear();
+                defectDesc.getEditText().getText().clear();
             }
         });
 
