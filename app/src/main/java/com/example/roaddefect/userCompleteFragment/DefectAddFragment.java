@@ -39,6 +39,28 @@ public class DefectAddFragment extends Fragment {
         defectAutoComp1.setThreshold(0);
         defectAutoComp1.setAdapter(adapter1);
 
+        /* implement this below at the end for changing the subdefect based upon the parent defect selected dynamically
+        defectAutoComp1.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if(!s.toString().isEmpty()){
+                    defectAutoComp2.setVisibility(View.VISIBLE);
+                }
+                else
+                    defectAutoComp2.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });*/
+
         defectAutoComp1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
